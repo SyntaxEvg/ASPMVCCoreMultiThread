@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,8 +21,10 @@ namespace ASPMVCCoreMultiThread
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window 
     {
+        readonly ConcurrentBag<string> values = new System.Collections.Concurrent.ConcurrentBag<string>();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -54,7 +57,9 @@ namespace ASPMVCCoreMultiThread
                     FibonText.Dispatcher.Invoke(() =>
                     {
                         sleep =(int)float.Parse(Slider.Value.ToString());
-                        FibonText.Text = result.ToString();
+                        var res = result.ToString();
+                        values.Add(res);
+                        FibonText.Text = res;
                     }); 
                     if (sleep != 0)
                     {
@@ -75,6 +80,17 @@ namespace ASPMVCCoreMultiThread
         private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {          
              MessageBox.Show(Slider.Value.ToString());
+        }
+
+        //задача про лист
+        public void ListConcurent()
+        {
+            //Создайте класс-обертку над List<T>, что бы можно было добавлять и удалять элементы из
+            //разных потоков без ошибок
+            //обертку придумали уже за нас и называется она ConcurrentBag,поэтому не стал изобретать  велосипед
+           
+
+
         }
     }
 }
