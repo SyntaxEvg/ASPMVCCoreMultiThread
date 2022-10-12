@@ -39,6 +39,9 @@ namespace ASPMVCCoreMultiThread
             return Fibonachi(numb - 1) + Fibonachi(numb - 2);
         }
 
+        /// <summary>
+        /// выполнить метод
+        /// </summary>
         private void execute()
         {
             start.IsEnabled = false;
