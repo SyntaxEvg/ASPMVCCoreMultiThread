@@ -44,17 +44,22 @@ namespace ASPMVCCoreMultiThread
         /// </summary>
         private void execute()
         {
-            start.IsEnabled = false;
+           // start.IsEnabled = false;
             var thread = new Thread(() =>
             {
                 for (int i = 0; i < 20; i++)
                 {
+                    int sleep = 0;
                     var result = Fibonachi(i);
                     FibonText.Dispatcher.Invoke(() =>
                     {
+                        sleep =(int)float.Parse(Slider.Value.ToString());
                         FibonText.Text = result.ToString();
-                    });
-                    Thread.Sleep(5000);
+                    }); 
+                    if (sleep != 0)
+                    {
+                        Thread.Sleep(5000);
+                    }
                 }
                 start.Dispatcher.Invoke(() =>
                 {
@@ -65,6 +70,11 @@ namespace ASPMVCCoreMultiThread
                 IsBackground = true
             };
             thread.Start();
+        }
+
+        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {          
+             MessageBox.Show(Slider.Value.ToString());
         }
     }
 }

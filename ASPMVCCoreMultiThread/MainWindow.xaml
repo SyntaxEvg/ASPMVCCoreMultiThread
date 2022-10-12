@@ -8,7 +8,11 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <StackPanel>
-            <GroupBox Name="wq">
+            <Slider ValueChanged="Slider_ValueChanged" 
+                            Name="Slider"
+                            Minimum="25"
+                            Maximum="2000" Height="27"/>
+            <GroupBox>
                 <DockPanel>
                     <Label 
                            Content="Fibonachi:" 
