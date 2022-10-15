@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPMVCCoreMultiThread", "ASPMVCCoreMultiThread\ASPMVCCoreMultiThread.csproj", "{7496B54C-AFD2-4A38-92BA-D07F0A8388FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPMVCCoreMultiThread", "ASPMVCCoreMultiThread\ASPMVCCoreMultiThread.csproj", "{7496B54C-AFD2-4A38-92BA-D07F0A8388FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{FFF66A41-4075-448C-B745-2D50A9F574B9}"
+	ProjectSection(SolutionItems) = preProject
+		ThreadPoolApp\ThreadPoolApp.csproj = ThreadPoolApp\ThreadPoolApp.csproj
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
