@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решен
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICommadCustam", "ICommadCustam\ICommadCustam.csproj", "{6315A045-8B06-418E-8A10-398FE18948B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Log", "Log\Log.csproj", "{4A6603C5-17D6-4070-A89D-434CFC3B04AC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson5Log", "Lesson5Log\Lesson5Log.csproj", "{80AE4BBF-38B1-4F55-BF31-FC40E0C925BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,10 +28,10 @@ Global
 		{6315A045-8B06-418E-8A10-398FE18948B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6315A045-8B06-418E-8A10-398FE18948B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6315A045-8B06-418E-8A10-398FE18948B1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4A6603C5-17D6-4070-A89D-434CFC3B04AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4A6603C5-17D6-4070-A89D-434CFC3B04AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4A6603C5-17D6-4070-A89D-434CFC3B04AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4A6603C5-17D6-4070-A89D-434CFC3B04AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80AE4BBF-38B1-4F55-BF31-FC40E0C925BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80AE4BBF-38B1-4F55-BF31-FC40E0C925BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80AE4BBF-38B1-4F55-BF31-FC40E0C925BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80AE4BBF-38B1-4F55-BF31-FC40E0C925BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
